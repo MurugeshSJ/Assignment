@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign up</title>
+        
+    <body>
+        
+        <form method="post" target="#" onsubmit="return validate()">
+        <h1>Register for CBT based training</h1>
+        <p>To be able to use all features of CBT based training you will require an account. The form below will allow you to create a new account if you don't have one yet.</p>
+        
+      	Employee ID:<br>
+      	<input type="text" name="text"><br>
+        Employee Name:<br>
+	<input type="text" name="text"><br>
+        Email<br>
+      	<input type="text" name="Email"><br>
+  
+    <td>
+        <label for="phone">Enter a phone number:</label><br>
+      <select>
+      <option>+91</option>
+      <option>+1</option>
+      <option>+92</option>
+      </select>
+      <input type="tel" id="phone" name="phone"><br>
+    
+    </td>
+    
+
+    Technology:<br>
+	<input type="text" name="text"><br>
+        Course:<br>
+	<input type="text" name="text"><br>
+
+    Preferred Dates:<br>
+    <label for = " Date"> Date</label>
+    <input type="Date" name="Date"><br>
+    Starting Date:<br>
+    <input type="Date" name="Date">
+    End Date:
+    <input type="Date" name="Date"><br>
+
+    Other Facilities:<br>
+    <input type="text" name="text"><br>
+    Virtual Lab:<br>
+    <input type="text" name="text"><br>
+    Online Quiz:<br>
+    <input type="text" name="text"><br>
+    Online Instructor(to clarify doubts):<br>
+    <input type="text" name="text"><br>
+        
+        <label>
+          <input type="checkbox" name="terms">By signing up to CBT based training you agree to your
+           <a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a>
+        </label>
+            
+      	<div class="button">
+          <input type="submit" class="button" value="Set Up Account">
+        </div>
+        
+	</form>
+</body>
+</html>
