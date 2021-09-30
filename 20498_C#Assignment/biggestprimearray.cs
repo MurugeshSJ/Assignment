@@ -9,17 +9,17 @@ namespace assignment
         static void prime(int[] arr, int n)
         {
             // Find maximum value in the array
-            int max_val = arr.Max();
+            int maxval = arr.Max();
             List<bool> prime = new List<bool>();
-            for (int i = 0; i < max_val + 1; i++)
+            for (int i = 0; i < maxval + 1; i++)
                 prime.Add(true);
             prime.Insert(0, false);
             prime.Insert(1, false);
-            for (int p = 2; p * p <= max_val; p++)
+            for (int p = 2; p * p <= maxval; p++)
             {
                 if (prime[p] == true)
                 {
-                   for (int i = p * 2; i <= max_val; i += p)
+                   for (int i = p * 2; i <= maxval; i += p)
                         prime.Insert(i, false);
                 }
             }
