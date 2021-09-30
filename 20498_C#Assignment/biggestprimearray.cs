@@ -8,7 +8,6 @@ namespace assignment
     {
         static void prime(int[] arr, int n)
         {
-            // Find maximum value in the array
             int maxval = arr.Max();
             List<bool> prime = new List<bool>();
             for (int i = 0; i < maxval + 1; i++)
@@ -22,14 +21,11 @@ namespace assignment
                    for (int i = p * 2; i <= maxval; i += p)
                         prime.Insert(i, false);
                 }
-            }
-
-            
+            } 
             int maximum = int.MinValue;
             for (int i = 0; i < n; i++)
                 if (prime[arr[i]])
                 {
-                   
                     maximum = Math.Max(maximum, arr[i]);
                 }
 
